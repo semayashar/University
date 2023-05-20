@@ -1,0 +1,6 @@
+﻿  CFlower.cpp
+  CPlant.cpp
+  CTree.cpp
+  Generating Code...
+C:\Users\sema_\Desktop\Software Engineering\2-ри семестър\Обектно-ориентирано програмиране\courework.2\CPlant.cpp(16): warning C4715: 'CPlant::findPS': not all control paths return a value
+  courework.2.vcxproj -> C:\Users\sema_\Desktop\Software Engineering\2-ри семестър\Обектно-ориентирано програмиране\courework.2\Debug\courework.2.exe
