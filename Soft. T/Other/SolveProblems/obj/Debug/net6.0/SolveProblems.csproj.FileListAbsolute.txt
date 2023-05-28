@@ -1,0 +1,15 @@
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\SolveProblems.csproj.AssemblyReference.cache
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\SolveProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\SolveProblems.AssemblyInfoInputs.cache
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\SolveProblems.AssemblyInfo.cs
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\SolveProblems.csproj.CoreCompileInputs.cache
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\bin\Debug\net6.0\SolveProblems.exe
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\bin\Debug\net6.0\SolveProblems.deps.json
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\bin\Debug\net6.0\SolveProblems.runtimeconfig.json
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\bin\Debug\net6.0\SolveProblems.dll
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\bin\Debug\net6.0\SolveProblems.pdb
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\SolveProblems.dll
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\refint\SolveProblems.dll
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\SolveProblems.pdb
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\SolveProblems.genruntimeconfig.cache
+C:\Users\sema_\Desktop\Software Engineering\4-ти семестър\Тестване на софтуер\FizzBuzz\SolveProblems\obj\Debug\net6.0\ref\SolveProblems.dll
