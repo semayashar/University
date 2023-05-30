@@ -1,0 +1,30 @@
+play_guessing_game :-
+    random_between(1, 100, Target),
+    format('Welcome to the Guessing Game!~n', []),
+    play(Target, 0).
+
+play(Target, Guesses) :-
+    write('Enter your guess: '),
+    read(Guess),
+    (   integer(Guess),
+        between(1, 100, Guess) ->
+        process_guess(Guess, Target, Guesses)
+    ;   write('Invalid input. Please enter a number between 1 and 100.~n'),
+        play(Target, Guesses)
+    ).
+
+process_guess(Guess, Target, Guesses) :-
+    Guess =:= Target,
+    format('Congratulations! You guessed the number in ~d guesses!~n', [Guesses]).
+    
+process_guess(Guess, Target, Guesses) :-
+    Guess > Target,
+    format('Too high. Try again.~n', []),
+    NewGuesses is Guesses + 1,
+    play(Target, NewGuesses).
+    
+process_guess(Guess, Target, Guesses) :-
+    Guess < Target,
+    format('Too low. Try again.~n', []),
+    NewGuesses is Guesses + 1,
+    play(Target, NewGuesses).
