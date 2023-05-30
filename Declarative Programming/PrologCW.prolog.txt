@@ -1,0 +1,27 @@
+% Създаване на нов обект от тип „film“:
+make_film(Name, Director, Screenwriter, Actors, Film) :- Film = film{Name: Name, Director: Director, Screenwriter: Screenwriter, Actors: Actors}.
+
+% Създаване на списък от филми от потребителски вход:
+create_films(L) :- create_films_loop(L, []).
+create_films_loop(Films, FilmsAcc) :-
+    write('Enter film name: '), read_line(NameF),
+    write('Enter director: '), read_line(DirectorF),
+    write('Enter screenwriter: '), read_line(ScreenwriterF),
+    write('Enter actor 1: '), read_line(Actor1),
+    write('Enter actor 2: '), read_line(Actor2),
+    write('Enter actor 3: '), read_line(Actor3),
+    write('Enter actor 4: '), read_line(Actor4),
+    write('Enter actor 5: '), read_line(Actor5),
+make_film(NameF, DirectorF, ScreenwriterF, [Actor1, Actor2, Actor3, Actor4, Actor5], Film), append(FilmsAcc, [Film], NewFilmsAcc), create_films_continue(NewFilmsAcc, Films).
+create_films_continue(Films, Films) :- write('Do you want to continue? (yes/no): '), read_response(Response), Response = 'no'. 
+create_films_continue(Films, FinalFilms) :- write('Do you want to continue? (yes/no): '), read_response(Response), Response = 'yes', create_films_loop(Films, FinalFilms).
+read_line(Line) :- read_line_to_codes(user_input, Codes), string_codes(Line, Codes).
+read_response(Response) :- read_line(Line), string_lower(Line, LowerCase), atom_string(Response, LowerCase), (Response = 'yes'; Response = 'no').
+% Принтиране на всички филми от даден списък:
+print_films([]).
+print_films([Film|Films]) :-format('Film: an', [Name]), format('Director: an', [Director]), format('Screenwriter: an', [Screenwriter]), format('Actors: ', []), print_actors(Actors), nl, print_films(Films).
+print_actors([]).
+print_actors([Actor|Actors]) :-format('~a', [Actor]),(Actors = [] -> write('.'); write(', ')), print_actors(Actors).
+
+% Принтиране на всички филми, в които участва даден актьор в даден списък:
+print_films_actor_plays(Films, Name) :- foreach(film(NameFilm, _, _, Actors, _), Films), member(Name, Actors), write(NameFilm), nl.
