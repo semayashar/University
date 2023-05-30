@@ -1,0 +1,32 @@
+Zad. 1:
+fun(56).
+fun(K):- K>0, write((2*K+2)/2), nl, newL().
+fun(K):- K<0, write("negative"), nl, newL().
+
+newL():- read(K), fun(K).
+?- newL().
+
+
+Zad. 2:
+collect_numbers(_, _, [], []).
+
+collect_numbers(A, B, [X|Rest], [X|Collected]) :-
+    X < A, collect_numbers(A, B, Rest, Collected).
+
+collect_numbers(A, B, [X|Rest], [X|Collected]) :-
+    X > B, collect_numbers(A, B, Rest, Collected).
+
+collect_numbers(A, B, Rest, Collected) :-
+    collect_numbers(A, B, Rest, Collected).
+
+Zad. 3:
+man("Ivelina", 18, f, 3).
+man("Petur", 20, m, 3).
+man("Paolina", 20, f, 3).
+man("Stefan", 19, m, 3).
+man("Penya", 23, f, 3).
+man("Gosho", 18, m, 4).
+
+find1(A1, L):- findall((N, A, S, P), (man(N, A, S, P), A < A1, S == m), L).
+find2(L):- findall((N, S, P), (man(N, _, S, P)), L).
+find3(P, L):- findall(N, (man(N, _, _, F), F==P), L).

@@ -1,0 +1,38 @@
+/*travel(barcelona, spain, 7, 1200, plane).
+travel(madrid, spain, 5, 1000, plane).
+travel(rome, italy, 5, 850, plane).
+travel(rome, italy, 10, 900, train).
+travel(milan, italy, 10, 850, train).
+travel(budapest, hungary, 5, 1100, plane).
+travel(budapest, hungary, 8, 1000, train).
+travel(wien, austria, 7, 1200, plane).
+travel(wien, austria, 10, 1100, bus).
+travel(berlin, germany, 7, 1200, plane).
+travel(berlin, germany, 10, 1100, bus).
+travel(dresden, germany, 7, 1200, bus).
+travel(bremen, germany, 5, 1200, plane).
+?-travel(barcelona,_,X,_,_), write(X), nl.
+?-travel(X,_,_,_,train), write(X), nl.
+?-travel(_,italy,_,X,_), write(X), nl.
+?-travel(X,Y,25,_,_), write(X),nl,write(Y),nl.
+
+dog(fido). large(fido).
+cat(mary). large(mary).
+dog(rover). small(rover).
+cat(jane). small(jane).
+dog(tom). small(tom).
+cat(harry).
+dog(fred). large(fred).
+cat(henry). large(henry).
+cat(bill).
+cat(steve). large(steve).
+large(jim). large(mike).
+large_dog(X):�dog(X),large(X).
+small_animal(A):�dog(A),small(A).
+small_animal(B):�cat(B),small(B).
+chases(X,Y):�large_dog(X), small_animal(Y), write(X), write('chases'), write(Y), nl.
+?- chases(X,Y).*/
+
+
+
+ 
