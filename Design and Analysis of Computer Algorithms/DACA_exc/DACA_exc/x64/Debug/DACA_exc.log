@@ -1,0 +1,3 @@
+﻿  DACA_exc.cpp
+C:\GitHub\University\Design and Analysis of Computer Algorithms\DACA_exc\DACA_exc\DACA_exc.cpp(73,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  DACA_exc.vcxproj -> C:\GitHub\University\Design and Analysis of Computer Algorithms\DACA_exc\x64\Debug\DACA_exc.exe
