@@ -1,0 +1,215 @@
+﻿@model RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            background: transparent;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .form-box {
+            position: relative;
+            width: 400px;
+            height: auto;;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+        }
+
+        .inputbox {
+            position: relative;
+            margin: 40px 0;
+            width: 310px;
+            border-bottom: 2px solid #fff;
+        }
+
+            .inputbox label {
+                position: absolute;
+                left: 5px;
+                transform: translateY(-50%);
+                color: #fff;
+                font-size: 1em;
+                pointer-events: none;
+                transition: 0.5s;
+            }
+
+        input:focus ~ label {
+            top: -5px;
+        }
+
+        input:valid ~ label {
+            top: -5px;
+        }
+
+        .inputbox input {
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            padding: 0 35px 0 5px;
+            color: #fff;
+        }
+
+        .inputbox ion-icon {
+            position: absolute;
+            right: 8px;
+            color: #fff;
+            font-size: 1.2em;
+            top: 20px;
+        }
+
+        .forget {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0 15px;
+            font-size: 0.9em;
+            color: #fff;
+        }
+
+            .forget label:nth-child(2) {
+                order: 1;
+            }
+
+            .forget label {
+                display: flex;
+                align-items: center;
+            }
+
+                .forget label input[type="checkbox"] {
+                    margin-right: 6px;
+                }
+
+                .forget label a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                    .forget label a:hover {
+                        text-decoration: underline;
+                    }
+
+        button {
+            width: 100%;
+            height: 40px;
+            border-radius: 40px;
+            background: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        .login {
+            font-size: 0.9em;
+            color: #fff;
+            text-align: center;
+            margin: 25px 0 10px;
+        }
+
+            .login p a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: 600;
+            }
+
+                .login p a:hover {
+                    text-decoration: underline;
+                }
+
+        .inputLabel {
+            margin-bottom: 20px;
+        }
+
+        .text-center1 {
+            margin-block: 25px;
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="account" method="post">
+                    <h2 class="text-center1">@ViewData["Title"]</h2>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <label asp-for="@Model.UserName">Username</label>
+                        <input autocomplete="username" aria-required="true" asp-for="@Model.UserName" />
+                        <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <label asp-for="@Model.Email">Email</label>
+                        <input autocomplete="username" aria-required="true" asp-for="@Model.Email" />
+                        <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <label asp-for="@Model.Password">Password</label>
+                        <input type="password" autocomplete="new-password" aria-required="true" asp-for="@Model.Password" />
+                        <span asp-validation-for="@Model.Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <label asp-for="@Model.ConfirmPassword">Confirm Password</label>
+                        <input type="password" autocomplete="new-password" aria-required="true" asp-for="@Model.ConfirmPassword" />
+                        <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
+                    </div>
+
+                    <div class="text-center1">
+                        <button id="registerSubmit" type="submit">Register now</button>
+                    </div>
+                    <div class="login">
+                        <p>Already have an account?  <a asp-action="Login">Login</a> </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+</body>
+</html>
+
