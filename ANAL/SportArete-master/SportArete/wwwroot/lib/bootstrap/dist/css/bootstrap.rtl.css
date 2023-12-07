@@ -654,25 +654,24 @@ progress {
   }
 }
 .row {
-    box-shadow: 0 10px 20px rgb(0 0 0);
+    margin-inline: 20px;
+    margin-block: 10px;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -.5);
-    margin-left: calc(var(--bs-gutter-x) * -.5);
+    /* flex-wrap: wrap; */
+    /* margin-top: calc(var(--bs-gutter-y) * -1); */
+    /* margin-right: calc(var(--bs-gutter-x) * -.5); */
+    /* margin-left: calc(var(--bs-gutter-x) * -.5); */
 }
-
-    .row > * {
-        box-shadow: 0 10px 20px rgb(0 0 0);
-        flex-shrink: 0;
-        width: 100%;
-        max-width: 100%;
-        padding-left: calc(var(--bs-gutter-x) * .5);
-        padding-right: calc(var(--bs-gutter-x) * .5);
-        margin-top: var(--bs-gutter-y);
-    }
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
 
 .col {
   flex: 1 0 0%;

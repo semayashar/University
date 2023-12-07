@@ -20,18 +20,15 @@
 }
 
     .page-wrapper .page-inner {
-        margin-inline: 50px;
-        margin-block: 20px;
         display: table-cell;
         vertical-align: middle;
     }
 
 .el-wrapper {
-    width: 320px;
+    width: 360px;
     padding: 15px;
-    /* margin: 15px auto; */
+    margin: 15px auto;
     background-color: #fff;
-    box-shadow: 0 10px 35px rgb(0 0 0);
 }
 
 @media (max-width: 991px) {
@@ -285,8 +282,6 @@
 }
 
 .topProducts {
-    font-family: fantasy;
-    
     background-color: white;
     font-size: 50px;
     position: relative;
