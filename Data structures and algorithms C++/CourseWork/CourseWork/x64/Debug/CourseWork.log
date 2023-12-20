@@ -1,0 +1,5 @@
+﻿  CourseWork.cpp
+C:\GitHub\University\Data structures and algorithms C++\CourseWork\CourseWork\CourseWork.cpp(88,12): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\GitHub\University\Data structures and algorithms C++\CourseWork\CourseWork\CourseWork.cpp(131,10): warning C4101: 'check': unreferenced local variable
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1096,5): error MSB6006: "link.exe" exited with code 1168.
+LINK : fatal error LNK1168: cannot open C:\GitHub\University\Data structures and algorithms C++\CourseWork\x64\Debug\CourseWork.exe for writing
