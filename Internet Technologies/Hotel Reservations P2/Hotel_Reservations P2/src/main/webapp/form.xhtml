@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+    <title>Hotel Reservations</title>
+    <style>
+       body {
+		    background-attachment: fixed;
+		    margin: 0;
+		    padding: 0;
+		    background-image: url(https://img.freepik.com/premium-photo/abstract-blur-luxury-hotel-lobby-background_1339-98452.jpg);
+		    background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    font-family: Arial, sans-serif;
+		}
+
+         .container {
+		    background-color: rgba(255, 255, 255, 0.9);
+		    max-width: 800px;
+		    margin: 40px auto;
+		    padding: 20px;
+		    border-radius: 8px;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+        h2 {
+            color: #333;
+        }
+
+        h:form {
+            margin-top: 20px;
+        }
+
+.panelGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        .panelGrid label {
+            font-weight: bold;
+        }
+
+        .inputText {
+    /* width: calc(100% - 10px); */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+        .selectMenu {
+    /* width: calc(100% - 10px); */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+       .commandButton {
+    margin-block: 17px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+        .commandButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <ui:include src="header.xhtml"/>
+
+    <h2>Hotel Reservations</h2>
+
+    <h:form>
+        <div class="panelGrid">
+            <label for="name">Name</label>
+            <h:inputText id="name" required="true" styleClass="inputText" value="#{reservations.name}"/>
+            
+			<label for="arrival_date">Arrival Date</label>
+			<h:inputText id="arrival_date" required="true" styleClass="inputText" value="#{reservations.arrivalDate}"/>
+			
+			<label for="departure_date">Departure Date</label>
+			<h:inputText id="departure_date" required="true" styleClass="inputText" value="#{reservations.departureDate}" />
+			            
+           	<label for="price">Price</label>
+			<h:inputText id="price" type="text" required="true" styleClass="inputText" value="#{reservations.price}" />
+
+            <label for="apartment_type">Apartment Type</label>
+            <h:selectOneMenu id="apartment_type" required="true" styleClass="selectMenu" value="#{reservations.apartmentType}">
+                <f:selectItem itemLabel="Select Apartment Type" itemValue=""/>
+                <f:selectItem itemLabel="Standard" itemValue="standard"/>
+                <f:selectItem itemLabel="Deluxe" itemValue="deluxe"/>
+                <f:selectItem itemLabel="Suite" itemValue="suite"/>
+            </h:selectOneMenu>
+
+            <label for="all_inclusive">Breakfast</label>
+            <h:selectBooleanCheckbox id="breakfast" value="#{reservations.breakfast}" />
+            
+            <label for="dinner">Dinner</label>
+			<h:selectBooleanCheckbox id="dinner" value="#{reservations.dinner}" />
+
+            <h:outputText/>
+			
+        </div>
+        <h:commandButton value="Submit Reservation" action="#{reservations.send}" styleClass="commandButton"/>
+    </h:form>
+</div>
+
+</body>
+</html>
