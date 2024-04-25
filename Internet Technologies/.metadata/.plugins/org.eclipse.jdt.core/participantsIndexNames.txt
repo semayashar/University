@@ -1,0 +1,21 @@
+INDEX VERSION 1.134
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3085419073.index
+\reservations\src\main\resources
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3186663323.index
+\restfull_webservice\src\main\resources
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1812120020.index
+\servlet_example\src\main\resources
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\94618899.index
+\HotelReservations\src\main\resources
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3413753059.index
+\zip-archiveExample\src\main\resources
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3723477472.index
+\Hotel_Reservations\src\main\java
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\764740051.index
+\reservations_webapp\src\main\java
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1603970177.index
+\super_mario\src\main\resources
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3631912635.index
+\first_web_application\src\main\resources
+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3417208976.index
+\jsf_webapp\src\main\resources

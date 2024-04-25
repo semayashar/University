@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.j2ee.server:restfull_webservice" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:Hotel_Reservations_P1" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:Hotel_Reservations_P2" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:Hotel_Reservations" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:first_web_application" serverId="Tomcat v10.1 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:reservations_webapp" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:servlet_example" serverId="Tomcat v10.1 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:jsf_webapp" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:HotelReservations" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:reservations" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:super_mario" serverId="Tomcat v10.0 Server at localhost"/>
+</modules>
