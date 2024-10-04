@@ -1,3 +1,7 @@
-INDEX VERSION 1.4+C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-4127444503.index
-2485027028.index
+INDEX VERSION 1.4+C:\Users\Сема Яшарова\Documents\GitHub\University\Internet Technologies\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3632179326.index
+4275696184.index
+1830371499.index
+3851224873.index
+2181825331.index
+2078817715.index

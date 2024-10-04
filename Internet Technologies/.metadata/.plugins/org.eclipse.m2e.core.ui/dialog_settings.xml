@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\Сема Яшарова\OneDrive\Работен плот\1 Workspace for final exams\Hotel_Reservations P2"/>
+			<item value="C:\Users\Сема Яшарова\OneDrive\Работен плот\1 Workspace for final exams"/>
+			<item value="C:\Users\Сема Яшарова\Documents\GitHub\University\Internet Technologies\New folder\Exam Prep"/>
+			<item value="C:\Users\Сема Яшарова\Documents\GitHub\University\Internet Technologies\Hotel Reservations P2\Hotel_Reservations P2"/>
+			<item value="C:\Users\Сема Яшарова\Documents\GitHub\University\Internet Technologies\Exam Prep"/>
+			<item value="C:\Users\Сема Яшарова\Documents\GitHub\University\Internet Technologies\Hotel Reservations P2"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenCheckoutLocationPage">
+		<list key="scmUrl">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\reservations"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\HotelReservations"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\jsf_webapp"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\super_mario\src\main\webapp\gallery.xhtml"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\first_web_application"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\restfull_webservice\src\main\java\filters\AuthenticationFilter.java"/>
+			<item value="C:\Users\Сема Яшарова\OneDrive\Работен плот\1 Workspace for final exams\Hotel_Reservations P2"/>
+			<item value="C:\Users\Сема Яшарова\Documents\GitHub\University\Internet Technologies\Hotel Reservations P2\Hotel_Reservations P2"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -31,13 +57,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="my_company.Hotel_Reservations"/>
+			<item value="my_company.Exam"/>
 		</list>
 		<list key="groupId">
 			<item value="my_company"/>
 		</list>
 		<list key="artifactId">
-			<item value="Hotel_Reservations"/>
+			<item value="Exam"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -73,24 +99,5 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
-	</section>
-	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
-	</section>
-	<section name="MavenProjectImportWizardPage">
-		<list key="rootDirectory">
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Java Course Work\Hotel_Reservations P2"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Java Course Work"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\Hotel Reservations P1.zip_expanded\Hotel_Reservations"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\Servers"/>
-			<item value="C:\Users\Сема Яшарова\OneDrive\Документи\Eclipse Projects\Hotel Reservations P2.zip_expanded\Hotel_Reservations P2"/>
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
-		</list>
 	</section>
 </section>

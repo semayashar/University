@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.servlet.Filter"/>
-    <fullyQualifiedTypeName name="dao.Database"/>
-    <fullyQualifiedTypeName name="entities.reservation"/>
-    <fullyQualifiedTypeName name="entities.Reservation"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>
