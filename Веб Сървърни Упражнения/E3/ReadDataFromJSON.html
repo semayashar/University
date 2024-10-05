@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch JSON Data</title>
+    <script>
+        let jsonData = [];
+
+        // Зареждане на първоначални данни от JSON файла
+        function loadData() {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    jsonData = data; // Съхраняваме данните в масива jsonData
+                    displayData(jsonData);
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // Показване на данни в контейнера
+        function displayData(data) {
+            const container = document.getElementById('data-container');
+            container.innerHTML = data.map(item => {
+                return `<div>
+                            <h3>${item.name} (${item.type})</h3>
+                            <p>Birthdate: ${item.birthDate}</p>
+                            <p>Major/Department: ${item.majorDept}</p>
+                            ${item.salary ? `<p>Salary: ${item.salary}</p>` : ''}
+                        </div>`;
+            }).join('');
+        }
+
+        // Филтриране само на студентите
+        function filterStudents() {
+            const students = jsonData.filter(item => item.type === 'student');
+            displayData(students);
+        }
+
+        // Филтриране само на служителите
+        function filterEmployees() {
+            const employees = jsonData.filter(item => item.type === 'employee');
+            displayData(employees);
+        }
+
+        // Добавяне на нов обект към jsonData
+        function addData() {
+            const name = document.getElementById('name').value;
+            const type = document.querySelector('input[name="type"]:checked').value; // Get the checked radio button value
+            const birthDate = document.getElementById('birthDate').value;
+            const majorDept = document.getElementById('majorDept').value;
+            const salary = document.getElementById('salary').value;
+
+            const newItem = {
+                name: name,
+                type: type,
+                birthDate: birthDate,
+                majorDept: majorDept,
+                salary: salary ? salary : null
+            };
+
+            jsonData.push(newItem); 
+            displayData(jsonData);
+        }
+
+        // Enable or disable the salary input based on the employee selection
+        function toggleSalaryInput() {
+            const isEmployee = document.getElementById('employee').checked;
+            const salaryInput = document.getElementById('salary');
+
+            // Enable or disable the salary input based on the selection
+            salaryInput.disabled = !isEmployee;
+        }
+    </script>
+</head>
+<body>
+    <h1>Load and Filter Data from JSON</h1>
+    <button onclick="loadData()">Load All Data</button>
+    <button onclick="filterStudents()">Show Only Students</button>
+    <button onclick="filterEmployees()">Show Only Employees</button>
+
+    <h2>Add New Data</h2>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+
+        <label>Type:</label>
+        <input type="radio" id="student" name="type" value="student" onclick="toggleSalaryInput()" checked>
+        <label for="student">Student</label>
+        <input type="radio" id="employee" name="type" value="employee" onclick="toggleSalaryInput()">
+        <label for="employee">Employee</label><br>
+
+        <label for="birthDate">Birthdate:</label>
+        <input type="text" id="birthDate"><br>
+
+        <label for="majorDept">Major/Department:</label>
+        <input type="text" id="majorDept"><br>
+
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" disabled><br> 
+        
+        <button onclick="addData()">Add Data</button>
+    </div>
+
+    <div id="data-container"></div>
+</body>
+</html>

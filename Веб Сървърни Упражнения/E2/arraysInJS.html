@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Масиви JS</title>
+
+    <script>
+      
+        var numberArray = [];
+
+       //ADD NUMBER
+        function addNumberEnd(){
+            
+            let num = document.getElementById("number").value;
+
+            numberArray.push(num);
+            displayList();
+           
+            document.getElementById("number").value = "";
+        }
+
+        function addNumberStart(){
+            
+            let num = document.getElementById("number").value;
+
+            numberArray.unshift(num);
+            displayList();
+           
+            document.getElementById("number").value = "";
+        }
+
+        //DELETE NUMBER
+        function deleteNumberEnd(){
+            
+            numberArray.pop();
+            displayList();
+           
+            document.getElementById("number").value = "";
+        }
+
+        function deleteNumberStart(){
+            
+            numberArray.shift();
+            displayList();
+           
+            document.getElementById("number").value = "";
+        }
+
+        function displayList() {
+            let text = "<ul>"; 
+            numberArray.forEach(function(value) {
+                text += "<li>" + value + "</li>"; 
+            });
+            text += "</ul>";
+
+            document.getElementById("list").innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+
+    <label for="number">Напиши число: </label>
+    <input type="text" id="number">
+
+    <button onclick="addNumberEnd()">Добави Дясно</button>
+    <button onclick="addNumberStart()">Добави Ляво</button>
+    <button onclick="deleteNumberEnd()">Премахни Дясно</button>
+    <button onclick="deleteNumberStart()">Премахни Ляво</button>
+
+    <p id="result">Резултат: </p>   
+    <p id="list"></p> 
+
+</body>
+</html>

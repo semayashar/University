@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+h1, h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: left;
+    color: #2c3e50;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.right {
+    flex: 2;
+}
+
+input[type="text"], input[type="number"], input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#employeeFields, #studentFields {
+    border: 1px solid #ecf0f1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#output div {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #34495e;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    button {
+        margin-block: 25px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}

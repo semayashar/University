@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script>
+        function sum() {
+            let a = parseFloat(document.getElementById("var1").value);
+            let b = parseFloat(document.getElementById("var2").value);
+            let c = a + b;
+            document.getElementById("result").innerHTML = c;
+        }
+
+        function subtract() {
+            let a = parseFloat(document.getElementById("var1").value);
+            let b = parseFloat(document.getElementById("var2").value);
+            let c = a - b;
+            document.getElementById("result").innerHTML = c;
+        }
+
+        function multiply() {
+            let a = parseFloat(document.getElementById("var1").value);
+            let b = parseFloat(document.getElementById("var2").value);
+            let c = a * b;
+            document.getElementById("result").innerHTML = c;
+        }
+
+        function divide() {
+            let a = parseFloat(document.getElementById("var1").value);
+            let b = parseFloat(document.getElementById("var2").value);
+            if (b !== 0) {
+                let c = a / b;
+                document.getElementById("result").innerHTML = c;
+            } else {
+                document.getElementById("result").innerHTML = "Cannot divide by zero";
+            }
+        }
+
+        function power(id) {
+            let num = parseFloat(document.getElementById(id).value);
+            let c = Math.pow(num, 2);  // You can modify the exponent as needed
+            document.getElementById("result").innerHTML = c;
+        }
+
+        function squareRoot(id) {
+            let num = parseFloat(document.getElementById(id).value);
+            if (num >= 0) {
+                let c = Math.sqrt(num);
+                document.getElementById("result").innerHTML = c;
+            } else {
+                document.getElementById("result").innerHTML = "Cannot take square root of a negative number";
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="var1">Число 1:</label>
+    <input id="var1">
+    <button onclick="power('var1')">Повдигане на степен</button>
+    <button onclick="squareRoot('var1')">Квадратен корен</button>
+
+    <label for="var2">Число 2:</label>
+    <input id="var2">
+    <button onclick="power('var2')">Повдигане на степен</button>
+    <button onclick="squareRoot('var2')">Квадратен корен</button>
+
+    <br><br>
+
+    <button onclick="sum()">Събиране +</button>
+    <button onclick="subtract()">Изваждане -</button>
+    <button onclick="multiply()">Умножение *</button>
+    <button onclick="divide()">Деление /</button>
+
+    <p>Отговор: <span id="result"></span></p>
+</body>
+</html>
